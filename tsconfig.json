@@ -1,0 +1,21 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "paths": {
+      "@firebase/auth":["./node_modules/@firebase/auth/dist/index.rn.d.ts"],
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.json",
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+, "src/components/DatesCard.tsx", "src/components/MessageItem.tsx", "src/components/MessageList.tsx"  ]
+}
